@@ -502,6 +502,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3123022429172315991, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
+      propertyPath: _SpawnLocation.x
+      value: 59.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3123022429172315991, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
+      propertyPath: _SpawnLocation.y
+      value: -10.07
+      objectReference: {fileID: 0}
     - target: {fileID: 3443018499767946900, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
       propertyPath: m_Name
       value: KatiePhase
@@ -586,6 +594,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 6411190348226484439, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.88
+      objectReference: {fileID: 0}
     - target: {fileID: 6876012221095616648, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.70710516
@@ -617,6 +629,10 @@ PrefabInstance:
     - target: {fileID: 8559160619770246032, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
       propertyPath: _force.x
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712183923741930192, guid: afd35fb96b003784eb7f3938439b4934, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.3700657
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
