@@ -5,14 +5,16 @@ using UnityEngine;
 
 public class CreateEndParticles : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _Particles;
+    [SerializeField] private GameObject _Particles;
+    [SerializeField] private Vector3 _SpawnLocation;
+
+    
     private void OnCollisionEnter (Collision collision)
     {
-        if (collision != null && collision.gameObject.tag == "Ball")
+        if (collision != null && collision.gameObject.tag == "Ball" && -_SpawnLocation != null)
         {
-            Vector3 spawnLoaction = new Vector3(127.3f, 0f, 69.48f);
-            Instantiate(_Particles, spawnLoaction, Quaternion.identity);
+            
+            Instantiate(_Particles, _SpawnLocation, Quaternion.identity);
 
             Destroy(collision.gameObject);
         }
