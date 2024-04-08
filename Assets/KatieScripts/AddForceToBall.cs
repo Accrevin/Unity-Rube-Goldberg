@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class AddForceToBall : MonoBehaviour
 {
-    [SerializeField] private float _force = -10.0f;
+    [SerializeField] private int _force;
 
     [Tooltip ("Tag of object that triggers adding force.")]
     [SerializeField] private string _tag;
@@ -30,7 +30,7 @@ public class AddForceToBall : MonoBehaviour
         if (rb != null && collision.gameObject.tag == _tag)
         {
             Debug.Log($"Collided with tag: {collision.gameObject.tag}");
-            rb.AddForce(_force, 0, 0, ForceMode.Impulse);
+            rb.AddForce(_force,0f, 0f, ForceMode.Impulse);
         }
     }
 
