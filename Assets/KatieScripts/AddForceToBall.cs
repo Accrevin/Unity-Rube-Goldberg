@@ -14,7 +14,7 @@ public class AddForceToBall : MonoBehaviour
     [SerializeField] private string _tag;
 
     Rigidbody rb;
-    // Start is called before the first frame update
+
     void Start()
     {
         GetRigidbody();
@@ -27,6 +27,7 @@ public class AddForceToBall : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //Only add force if collided with correct object
         if (rb != null && collision.gameObject.tag == _tag)
         {
             Debug.Log($"Collided with tag: {collision.gameObject.tag}");

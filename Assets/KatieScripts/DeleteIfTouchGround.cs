@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DeleteIfTouchGround : MonoBehaviour
 {
-    // Start is called before the first frame update
     private void OnCollisionEnter(Collision collision)
     {
         if (collision != null && collision.gameObject.name == "Ground")

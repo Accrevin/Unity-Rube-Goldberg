@@ -11,6 +11,7 @@ public class Rotator : MonoBehaviour
 
     void Update()
     {
+        //rotate
        if (canRotate == true)
         {
             transform.Rotate(_rotation * Time.deltaTime);
