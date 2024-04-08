@@ -2218,6 +2218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Particles: {fileID: 2197594735818080583, guid: e0d69e80ff237e44991f87503cebce5a, type: 3}
+  _SpawnLocation: {x: 59.38, y: 0, z: -10.07}
 --- !u!1 &6367390735952660417
 GameObject:
   m_ObjectHideFlags: 0
